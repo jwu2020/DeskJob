@@ -1,23 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import HomeButton from './pages/common/homeButton';
+import SettingsButton from './pages/common/settingsButton';
+import Timer from './pages/home/Timer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <HomeButton/>
+        <SettingsButton/> 
+        <Timer/>
       </header>
     </div>
   );
